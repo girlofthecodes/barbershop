@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contact - Barbershop Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="box">
+                <h1>
+                    <img src="images/logo.png">
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <fieldset class="label-required">
+                    <label for="full-name">Name and Surname</label>
+                    <input type="text" id="full-name" class="input-padron" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padron" required placeholder="email@dominio.com">
+
+                    <label for="telephone">Phone Number</label>
+                    <input type="tel" id="telephone" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                    <label for="Message">Message</label>
+                    <textarea col="70" rows="10" id="message" class="input-padron" required></textarea>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>How would you like us to contact you?</legend>
+
+                    <label><input type="radio" name="contact" value="email">Email</label>
+                    <label><input type="radio" name="contact" value="phonenumber">Phone Number</label>
+                    <label class="option"><input type="radio" name="contact" value="whatsapp" checked>WhatsApp</label>
+                </fieldset>
+                <fieldset>
+                    <legend>At what time do you prefer to be attended?</legend>
+                    <select>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Night</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Would like to receive news from the Barbershop Alura?</label>
+                <input type="submit" value="Send form" class="send">
+            </form>
+            <fieldset>
+                <legend class="title-table">Opening Hours</legend>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </main>
+        <footer>
+            <img src="images/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barbershop Alura - 2024</p>
+        </footer>
+    </body>
+</html>
